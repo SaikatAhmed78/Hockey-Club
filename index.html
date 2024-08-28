@@ -5,13 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey</title>
-    <!-- Tailwind and Daisy UI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <!-- Link CSS -->
+  <style>
+    .junior-program{
+      background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('./Images/2.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .senior-program{
+      background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('./Images/3.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .professional-program{
+      background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('./Images/4.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    </style>
+      
+      <!-- Tailwind and Daisy UI CDN -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+  
+      <!-- Font Awesome CDN -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  </head>
+      
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-</head>
 
 <body>
     <header class="container mx-auto">
@@ -102,7 +129,7 @@
          </div>
     </header>
 
-    <main class="container mx-auto">
+    <main class="container px-4 lg:px-0 mx-auto">
       <!-- First Section Hockeys Club -->
        <section class="mt-24">
        <!-- Introduction Part -->
@@ -151,6 +178,45 @@
           </div>
         </div>
        </section>
+
+       <!-- Program Section -->
+        <section class="mt-24">
+          <!-- Text Part -->
+          <div class="border-y-[2px] border-dashed py-12 text-center flex flex-col items-center justify-center">
+            <h3 class="text-3xl font-bold mb-3">Program Sections</h3>
+            <p class="opacity-80 w-1/2">Introduction, Training Modules, Assessment, Specialized Workshops, Practical Application, Mentorship, Review, Certification, Ongoing Learning, Conclusion.</p>
+          </div>
+          <!--  Image Grid Part -->
+            <div class="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-5">
+              <!-- Image One -->
+              <div 
+              class="w-full junior-program flex flex-col justify-end items-center p-24 text-white rounded-lg">
+                <div>
+                  <h5 class="text-2xl font-semibold mb-4">Junior Program</h5>
+                  <p>Engaging, skill-building activities tailored for young participants, focusing on fundamentals, teamwork, and personal growth</p>
+                  <button class="btn btn-error mt-4 text-white">Register Now!</button>
+                </div>
+              </div>
+              <!-- Image Two -->
+              <div 
+              class="w-full senior-program flex flex-col justify-end items-center p-24 text-white rounded-lg">
+                <div>
+                  <h5 class="text-2xl font-semibold mb-4">Senior Program</h5>
+                  <p>Engaging, skill-building activities tailored for young participants, focusing on fundamentals, teamwork, and personal growth</p>
+                  <button class="btn btn-error mt-4 text-white">Register Now!</button>
+                </div>
+              </div>
+              <!-- Image Three -->
+              <div 
+              class="lg:col-span-2 w-full professional-program flex flex-col justify-end items-start p-24 text-white rounded-lg">
+                <div>
+                  <h5 class="text-2xl font-semibold mb-4">Professional Program</h5>
+                  <p>Engaging, skill-building activities tailored for young participants, focusing on fundamentals, teamwork, and personal growth</p>
+                  <button class="btn btn-error mt-4 text-white">Register Now!</button>
+                </div>
+              </div>
+            </div>
+        </section>
     </main>
 
     <footer>
